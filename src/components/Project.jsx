@@ -48,6 +48,7 @@ function Project() {
                             href='https://qrcode-generator-sigma.vercel.app/'
                             className='view-source'
                             target="_blank"
+                            rel="noreferrer"
                         >
                             View Source
                             <span>
@@ -58,7 +59,7 @@ function Project() {
                             </span>
                         </a>
                     </div>
-                    <img src='/project/qr-code-generator.png' alt='' />
+                    <img src='/qr-code-generator.png' alt='qr-code-generator' />
                 </div>
                 <div className='project-box'>
                     <div className='project-description'>
@@ -71,6 +72,7 @@ function Project() {
                             href='https://quiz-maniac.vercel.app//'
                             className='view-source'
                             target="_blank"
+                            rel="noreferrer"
                         >
                             View Source
                             <span>
@@ -81,7 +83,7 @@ function Project() {
                             </span>
                         </a>
                     </div>
-                    <img src='/project/quiz-maniac.png' alt='' />
+                    <img src='/quiz-maniac.png' alt='quiz-maniac' />
                 </div>
                 <div className='project-box'>
                     <div className='project-description'>
@@ -94,6 +96,7 @@ function Project() {
                             href='https://react-calculator-beryl-delta.vercel.app/'
                             className='view-source'
                             target="_blank"
+                            rel="noreferrer"
                         >
                             View Source
                             <span>
@@ -104,7 +107,7 @@ function Project() {
                             </span>
                         </a>
                     </div>
-                    <img src='/project/calculator.png' alt='' />
+                    <img src='/calculator.png' alt='calculator' />
                 </div>
             </div>
             <p className='tag bottom'>&#60;/projects&#62;</p>
