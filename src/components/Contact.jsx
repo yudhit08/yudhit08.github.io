@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser"
-import axios from "axios";
 import Swal from "sweetalert2";
 
 function Contact() {
@@ -26,12 +25,6 @@ function Contact() {
         e.preventDefault();
         console.log(e.target)
         try {
-            await axios.post("http://localhost:5000/message", {
-                subject,
-                email,
-                message,
-            });
-
             emailjs
                 .sendForm(
                     "service_h117od3",
