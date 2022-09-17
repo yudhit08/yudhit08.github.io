@@ -5,7 +5,7 @@ import About from "./components/About";
 import Skill from "./components/Skill";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
-import "./App.css";
+import "./Style.css";
 
 function App() {
     const [menu, setMenu] = useState(true);
