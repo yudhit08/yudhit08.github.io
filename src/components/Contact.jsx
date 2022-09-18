@@ -81,6 +81,7 @@ function Contact() {
                         autoComplete='off'
                         onChange={(e) => setSubject(e.target.value)}
                         value={subject}
+                        required
                     />
                 </div>
                 <div className='email'>
@@ -93,6 +94,7 @@ function Contact() {
                         spellCheck='false'
                         onChange={(e) => setEmail(e.target.value)}
                         value={email}
+                        required
                     />
                 </div>
                 <div className='message'>
