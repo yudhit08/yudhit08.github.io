@@ -38,10 +38,9 @@ function Project() {
             <div className='project-box--container'>
                 <div className='project-box'>
                     <div className='project-description'>
+                        <h3>QR Code Generator</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quibusdam, provident aperiam nesciunt
-                            molestias ad necessitatibus.
+                            Online tool to convert any text into QR Code 
                         </p>
 
                         <a
@@ -63,10 +62,9 @@ function Project() {
                 </div>
                 <div className='project-box'>
                     <div className='project-description'>
+                        <h3>Quiz App</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quibusdam, provident aperiam nesciunt
-                            molestias ad necessitatibus.
+                            Responsive Quiz Website using API
                         </p>
                         <a
                             href='https://quiz-maniac.vercel.app//'
@@ -87,10 +85,9 @@ function Project() {
                 </div>
                 <div className='project-box'>
                     <div className='project-description'>
+                        <h3>Calculator</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quibusdam, provident aperiam nesciunt
-                            molestias ad necessitatibus.
+                            Calculator build with React JS
                         </p>
                         <a
                             href='https://react-calculator-beryl-delta.vercel.app/'
