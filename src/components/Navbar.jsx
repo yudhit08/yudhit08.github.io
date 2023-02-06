@@ -6,6 +6,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 function Navbar(props) {
     return (
         <div className={props.menu ? "navbar hidden" : "navbar"}>
+            <div className="logo-container">
+                <img src="/logo.png" alt="logo" />
+            </div>
             <div className='menu'>
                 <ul>
                     <li onClick={props.handleMenu}>

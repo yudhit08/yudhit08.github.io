@@ -145,6 +145,15 @@ body {
     right: -100vw;
 }
 
+.logo-container {
+    width: 10rem;
+    max-width: 100%;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
 .contact-link {
     display: flex;
     gap: 1rem;
@@ -472,12 +481,11 @@ a.view-source {
     transition: all .3s ease;
 }
 
-a.view-source .css-15sxr2v-MuiSvgIcon-root {
+a.view-source .view-arrow {
     transition: all .3s ease;
-    color: #bbb;
 }
 
-a.view-source:hover .css-15sxr2v-MuiSvgIcon-root{
+a.view-source:hover .view-arrow{
     transform: translateX(5px);
     color: var(--aqua);
 }
@@ -522,6 +530,7 @@ a.view-source:hover {
     outline: none;
     border: none;
     text-indent: 2rem;
+    padding-right: 1rem;
     font-size: 1.2rem;
     color: var(--white);
     letter-spacing: 1px;

@@ -52,7 +52,7 @@ function Project() {
                             View Source
                             <span>
                                 <ArrowForward
-                                    sx={{ color: "#f8f8f3" }}
+                                    sx={{ color: "#bbb" }}
                                     className='view-arrow'
                                 />
                             </span>
@@ -75,7 +75,7 @@ function Project() {
                             View Source
                             <span>
                                 <ArrowForward
-                                    sx={{ color: "#f8f8f3" }}
+                                    sx={{ color: "#bbb" }}
                                     className='view-arrow'
                                 />
                             </span>
@@ -98,7 +98,7 @@ function Project() {
                             View Source
                             <span>
                                 <ArrowForward
-                                    sx={{ color: "#f8f8f3" }}
+                                    sx={{ color: "#bbb" }}
                                     className='view-arrow'
                                 />
                             </span>
