@@ -495,9 +495,9 @@ button.none {
 .view-source a {
     border-radius: 50%;
     background-color: var(--aqua);
-    width: 10cqw;
-    height: 10cqw;
-    line-height: 10cqw;
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
     cursor: pointer;
     font-size: 1rem;
     color: var(--darken);
