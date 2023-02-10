@@ -111,7 +111,7 @@ function Home(props) {
 					<h1 className="desc">I am a web developer</h1>
 				</div>
 				<a href="#contact">
-					<button className="contact-me">Contact me</button>
+					<button className="contact-me">Say hello!</button>
 				</a>
 				<p className="tag bottom home">&#60;/home&#62;</p>
 			</div>

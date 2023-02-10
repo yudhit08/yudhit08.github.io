@@ -1,139 +1,61 @@
-import React, { useState, useEffect, useRef } from "react";
-import {MdArrowForward} from "react-icons/md";
+import { useState, useEffect, useRef } from "react";
+import { listProject } from "../lib/listProject";
 
 function Project() {
-    const [isShown, setIsShown] = useState(false);
-    const ref = useRef(null);
+	const [isShown, setIsShown] = useState(false);
+	const ref = useRef(null);
 
-    const handleScroll = () => {
-        if (!ref.current) return;
-        let windowHeight = window.innerHeight;
-        let elementTop = ref.current.getBoundingClientRect().y;
-        let elementVisible = 50;
-        if (elementTop < windowHeight - elementVisible) {
-            setIsShown(true);
-        } else {
-            setIsShown(false);
-        }
-    };
+	const handleScroll = () => {
+		if (!ref.current) return;
+		let windowHeight = window.innerHeight;
+		let elementTop = ref.current.getBoundingClientRect().y;
+		let elementVisible = 50;
+		if (elementTop < windowHeight - elementVisible) {
+			setIsShown(true);
+		} else {
+			setIsShown(false);
+		}
+	};
 
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
 
-        return () => {
-            window.removeEventListener("scroll", () => handleScroll);
-        };
-    }, []);
+		return () => {
+			window.removeEventListener("scroll", () => handleScroll);
+		};
+	}, []);
 
-    return (
-        <div
-            className={
-                isShown ? "project-container active" : "project-container"
-            }
-            id='project'
-            ref={ref}
-        >
-            <p className='tag top'>&#60;projects&#62;</p>
-            <h1 className='title'>Projects</h1>
-            <div className='project-box--container'>
-                <div className='project-box'>
-                    <div className='project-description'>
-                        <h3>Movie</h3>
-                        <p>
-                            Watch movie trailer and information
-                        </p>
-
-                        <a
-                            href='https://blueray.vercel.app/'
-                            className='view-source'
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            View Source
-                            <span>
-                                <MdArrowForward
-                                    sx={{ color: "#bbb" }}
-                                    className='view-arrow'
-                                />
-                            </span>
-                        </a>
-                    </div>
-                    <img src='/blueray.png' alt='blueray' />
-                </div>
-                <div className='project-box'>
-                    <div className='project-description'>
-                        <h3>Quiz App</h3>
-                        <p>
-                            Responsive Quiz Website using API
-                        </p>
-                        <a
-                            href='https://quiz-maniac.vercel.app//'
-                            className='view-source'
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            View Source
-                            <span>
-                                <MdArrowForward
-                                    sx={{ color: "#bbb" }}
-                                    className='view-arrow'
-                                />
-                            </span>
-                        </a>
-                    </div>
-                    <img src='/quiz-maniac.png' alt='quiz-maniac' />
-                </div>
-                <div className='project-box'>
-                    <div className='project-description'>
-                        <h3>Calculator</h3>
-                        <p>
-                            Calculator build with React JS
-                        </p>
-                        <a
-                            href='https://react-calculator-beryl-delta.vercel.app/'
-                            className='view-source'
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            View Source
-                            <span>
-                                <MdArrowForward
-                                    sx={{ color: "#bbb" }}
-                                    className='view-arrow'
-                                />
-                            </span>
-                        </a>
-                    </div>
-                    <img src='/calculator.png' alt='calculator' />
-                </div>
-                <div className='project-box'>
-                    <div className='project-description'>
-                        <h3>QR Code Generator</h3>
-                        <p>
-                            Online tool to convert any text into QR Code 
-                        </p>
-
-                        <a
-                            href='https://qrcode-generator-sigma.vercel.app/'
-                            className='view-source'
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            View Source
-                            <span>
-                                <MdArrowForward
-                                    sx={{ color: "#bbb" }}
-                                    className='view-arrow'
-                                />
-                            </span>
-                        </a>
-                    </div>
-                    <img src='/qr-code-generator.png' alt='qr-code-generator' />
-                </div>
-            </div>
-            <p className='tag bottom'>&#60;/projects&#62;</p>
-        </div>
-    );
+	return (
+		<div
+			className={
+				isShown ? "project-container active" : "project-container"
+			}
+			id="project"
+			ref={ref}
+		>
+			<p className="tag top">&#60;projects&#62;</p>
+			<h1 className="title">Projects</h1>
+			<div className="project-box--container">
+				{listProject.map((project) => {
+					return (
+						<div className="project-box" key={project.name}>
+							<div className="view-source">
+								<a
+									href={project.link}
+									target="_blank"
+									rel="noreferrer"
+								>
+									View Source
+								</a>
+							</div>
+							<img src={project.img} alt={project.name} />
+						</div>
+					);
+				})}
+			</div>
+			<p className="tag bottom">&#60;/projects&#62;</p>
+		</div>
+	);
 }
 
 export default Project;
