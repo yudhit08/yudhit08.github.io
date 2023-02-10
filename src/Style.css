@@ -65,14 +65,12 @@ body {
 
 .menu-button-container {
     cursor: pointer;
-    z-index: 100;
-    position: fixed;
-    top: 1.5rem;
-    right: 1.5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
     transition: 2s;
+    position: relative;
+    z-index: 100;
 }
 
 .menu-button-container p {
@@ -148,6 +146,18 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    width: 100%;
+    padding: 20px 1.5rem;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(25px);
+    background-color: transparent;
+}
+
+.menu {
     width: 100vw;
     height: 100vh;
     background-color: var(--dark);
@@ -159,17 +169,19 @@ body {
     position: fixed;
     transition: 1s ease;
     gap: 4rem;
-    z-index: 100;
+    z-index: 90;
     right: 0;
+    top: 0;
 }
 
-.navbar.hidden {
+.menu.hidden {
     right: -100vw;
 }
 
 .logo-container {
-    width: 10rem;
-    max-width: 100%;
+    width: 40px;
+    position: relative;
+    z-index: 100;
 }
 
 .logo-container img {
@@ -188,12 +200,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .menu ul li {
     list-style: none;
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
     font-weight: 500;
     letter-spacing: 1px;
@@ -661,8 +673,19 @@ a.view-source:hover {
         top: 0;
     }
 
-    .navbar.hidden {
-        left: 0;
+    .menu {
+        width: auto;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        right: inherit;
+        top: inherit;
+        background-color: transparent;
+        z-index: 0;
+    }
+
+    .menu.hidden {
+        right: inherit;
     }
 
     .menu ul {

@@ -104,17 +104,6 @@ function Home(props) {
 		<>
 			<canvas id="animation-mouse"></canvas>
 			<div className="home-container" id="home" ref={ref}>
-				<div
-					className="menu-button-container"
-					onClick={props.handleMenu}
-				>
-					{props.menu ? <p>MENU</p> : <p>CLOSE</p>}
-					<div className={props.menu ? "menu-btn" : "menu-btn open"}>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
 				<p className="tag top home">&#60;home&#62;</p>
 				<div className="intro">
 					<p>hi, my name is</p>
