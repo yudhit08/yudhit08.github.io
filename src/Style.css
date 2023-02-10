@@ -66,7 +66,7 @@ body {
 
 .loader-container img {
     width: 10rem;
-    filter: drop-shadow(3px 3px 50px var(--aqua));
+    filter: drop-shadow(3px 3px 50px #54ffda50);
     animation: loader 2.5s forwards;
 }
 
