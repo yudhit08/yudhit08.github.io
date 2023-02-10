@@ -104,7 +104,7 @@ function Home(props) {
 		<>
 			<canvas id="animation-mouse"></canvas>
 			<div className="home-container" id="home" ref={ref}>
-				<p className="tag top home">&#60;home&#62;</p>
+				<p className="tag top">&#60;intro&#62;</p>
 				<div className="intro">
 					<p>hi, my name is</p>
 					<h1>Yudhitya M. Renandra</h1>
@@ -113,7 +113,7 @@ function Home(props) {
 				<a href="#contact">
 					<button className="contact-me">Say hello!</button>
 				</a>
-				<p className="tag bottom home">&#60;/home&#62;</p>
+				<p className="tag bottom">&#60;/intro&#62;</p>
 			</div>
 		</>
 	);

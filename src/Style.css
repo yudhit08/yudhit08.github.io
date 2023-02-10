@@ -55,14 +55,6 @@ body {
     background: #555;
 }
 
-.profil-container {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: var(--dark);
-}
-
 .menu-button-container {
     cursor: pointer;
     display: flex;
@@ -148,7 +140,7 @@ body {
 .navbar {
     position: fixed;
     width: 100%;
-    padding: 20px 1.5rem;
+    padding: 10px 1.5rem;
     z-index: 100;
     display: flex;
     align-items: center;
@@ -227,26 +219,17 @@ p.top {
     margin-bottom: 1rem;
 }
 
-/* p.top.home {
-    position: relative;
-    top: 6rem;
-} */
-
 p.bottom {
     position: relative;
     margin-top: 1rem;
 }
-
-/* p.bottom.home {
-    position: relative;
-    bottom: 6rem;
-} */
 
 #animation-mouse {
     position: absolute;
     z-index: 1;
     height: 100%;
     width: 100%;
+    max-height: 50rem;
 }
 
 .home-container {
@@ -254,6 +237,7 @@ p.bottom {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    max-height: 50rem;
     padding: 1.5rem;
 }
 
