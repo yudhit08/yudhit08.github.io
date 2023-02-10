@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import ArrowForward from "@mui/icons-material/ArrowForward";
+import {MdArrowForward} from "react-icons/md";
 
 function Project() {
     const [isShown, setIsShown] = useState(false);
@@ -9,7 +9,7 @@ function Project() {
         if (!ref.current) return;
         let windowHeight = window.innerHeight;
         let elementTop = ref.current.getBoundingClientRect().y;
-        let elementVisible = 150;
+        let elementVisible = 50;
         if (elementTop < windowHeight - elementVisible) {
             setIsShown(true);
         } else {
@@ -38,27 +38,27 @@ function Project() {
             <div className='project-box--container'>
                 <div className='project-box'>
                     <div className='project-description'>
-                        <h3>QR Code Generator</h3>
+                        <h3>Movie</h3>
                         <p>
-                            Online tool to convert any text into QR Code 
+                            Watch movie trailer and information
                         </p>
 
                         <a
-                            href='https://qrcode-generator-sigma.vercel.app/'
+                            href='https://blueray.vercel.app/'
                             className='view-source'
                             target="_blank"
                             rel="noreferrer"
                         >
                             View Source
                             <span>
-                                <ArrowForward
+                                <MdArrowForward
                                     sx={{ color: "#bbb" }}
                                     className='view-arrow'
                                 />
                             </span>
                         </a>
                     </div>
-                    <img src='/qr-code-generator.png' alt='qr-code-generator' />
+                    <img src='/blueray.png' alt='blueray' />
                 </div>
                 <div className='project-box'>
                     <div className='project-description'>
@@ -74,7 +74,7 @@ function Project() {
                         >
                             View Source
                             <span>
-                                <ArrowForward
+                                <MdArrowForward
                                     sx={{ color: "#bbb" }}
                                     className='view-arrow'
                                 />
@@ -97,7 +97,7 @@ function Project() {
                         >
                             View Source
                             <span>
-                                <ArrowForward
+                                <MdArrowForward
                                     sx={{ color: "#bbb" }}
                                     className='view-arrow'
                                 />
@@ -105,6 +105,30 @@ function Project() {
                         </a>
                     </div>
                     <img src='/calculator.png' alt='calculator' />
+                </div>
+                <div className='project-box'>
+                    <div className='project-description'>
+                        <h3>QR Code Generator</h3>
+                        <p>
+                            Online tool to convert any text into QR Code 
+                        </p>
+
+                        <a
+                            href='https://qrcode-generator-sigma.vercel.app/'
+                            className='view-source'
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            View Source
+                            <span>
+                                <MdArrowForward
+                                    sx={{ color: "#bbb" }}
+                                    className='view-arrow'
+                                />
+                            </span>
+                        </a>
+                    </div>
+                    <img src='/qr-code-generator.png' alt='qr-code-generator' />
                 </div>
             </div>
             <p className='tag bottom'>&#60;/projects&#62;</p>

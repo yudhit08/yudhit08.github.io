@@ -13,7 +13,7 @@ function Contact() {
         if (!ref.current) return;
         let windowHeight = window.innerHeight;
         let elementTop = ref.current.getBoundingClientRect().y;
-        let elementVisible = 150;
+        let elementVisible = 50;
         if (elementTop < windowHeight - elementVisible) {
             setIsShown(true);
         } else {
