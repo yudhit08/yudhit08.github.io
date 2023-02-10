@@ -1,9 +1,9 @@
 function Navbar(props) {
 	return (
 		<div className="navbar">
-			<div className="logo-container">
+			<a href="/" className="logo-container">
 				<img src="/logo.png" alt="logo" />
-			</div>
+			</a>
 			<div className={props.menu ? "menu hidden" : "menu"}>
 				<ul>
 					<li onClick={props.handleMenu}>
