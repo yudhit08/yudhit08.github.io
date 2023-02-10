@@ -55,12 +55,6 @@ body {
     background: #555;
 }
 
-#animation-mouse {
-    position: absolute;
-    z-index: 1;
-    height: 100vh;
-}
-
 .profil-container {
     width: 10rem;
     height: 10rem;
@@ -236,6 +230,13 @@ p.bottom {
     bottom: 6rem;
 } */
 
+#animation-mouse {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
 .home-container {
     display: flex;
     flex-direction: column;
@@ -251,12 +252,14 @@ p.bottom {
 }
 
 .intro h1{
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: clamp(2rem, 15vw, 3rem);
+    line-height: clamp(2rem, 20vw, 3rem);
     margin-top: 20px;
 }
 
 .intro h1.desc {
+    font-size: clamp(1.4rem, 5vw, 2.5rem);
+    line-height: clamp(1rem, 10vw, 3rem);
     opacity: .5;
 }
 
@@ -600,9 +603,11 @@ a.view-source:hover {
 
 .footer-container {
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+    padding: 0 20px;
 }
 
 .footer-container p {
