@@ -1,11 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.9d895123.css",
-    "main.js": "/static/js/main.e20336bf.js",
+    "main.js": "/static/js/main.654c3547.js",
+    "static/media/blueray.png": "/static/media/blueray.5d8b649e91834fe78c2b.png",
+    "static/media/yudhit.jpg": "/static/media/yudhit.0aa76a1680a6a9136e16.jpg",
+    "static/media/quiz-maniac.png": "/static/media/quiz-maniac.3cf4fe03d71360e535c6.png",
+    "static/media/html5.png": "/static/media/html5.588dddc1e1a778b5d4e1.png",
+    "static/media/logo.png": "/static/media/logo.9b0cad53f1baebc40562.png",
+    "static/media/qrcode-generator.png": "/static/media/qrcode-generator.99d9378d0ea32d8b5afb.png",
+    "static/media/react.png": "/static/media/react.f3e576ba08e6be927148.png",
+    "static/media/calculator.png": "/static/media/calculator.48611f29108218b0b6c1.png",
+    "static/media/nodejs.png": "/static/media/nodejs.71da8e5dd61c2ff164f8.png",
+    "static/media/css3.png": "/static/media/css3.463e319bad8e0edf1ef7.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.9d895123.css",
-    "static/js/main.e20336bf.js"
+    "static/js/main.654c3547.js"
   ]
 }
