@@ -8,7 +8,7 @@ const ErrorMessages = ({errors, input}) => {
 			render={({ messages }) => {
 				return messages
 					? Object.entries(messages).map(([type, message]) => (
-							<p key={type}>
+							<p key={type} className="error-message">
 								{message}{" "}
 							</p>
 					  ))

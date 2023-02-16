@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./section/Home";
 import About from "./section/About";
@@ -6,8 +6,9 @@ import Project from "./section/Project";
 import Contact from "./section/Contact";
 import Social from "./components/Social";
 import Footer from "./section/Footer";
-import Loader from "./components/Loader";
-import "./style.min.css";
+// import "./style.min.css";
+import "./css/style.css"
+const Loader = lazy(() => import("./components/Loader"));
 
 function App() {
 	const [menu, setMenu] = useState(true);
@@ -24,7 +25,9 @@ function App() {
 	return (
 		<div className="App">
 			{isLoading ? (
-				<Loader />
+				<Suspense>
+					<Loader />
+				</Suspense>
 			) : (
 				<>
 					<Navbar menu={menu} handleMenu={handleMenu} />

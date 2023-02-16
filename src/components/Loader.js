@@ -1,9 +1,9 @@
-import logo from "../assets/logo.png"
+import Logo from "./Logo"
 
 const Loader = () => {
   return (
     <div className='loader-container'>
-        <img src={logo} alt="logo" />
+        <Logo />
     </div>
   )
 }

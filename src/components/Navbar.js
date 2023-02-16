@@ -1,10 +1,10 @@
-import logo from "../assets/logo.png"
+import Logo from "./Logo";
 
 function Navbar(props) {
 	return (
 		<div className="navbar">
 			<a href="/" className="logo-container">
-				<img src={logo} alt="logo" />
+				<Logo />
 			</a>
 			<div className={props.menu ? "menu hidden" : "menu"}>
 				<ul>
@@ -16,6 +16,15 @@ function Navbar(props) {
 					</li>
 					<li onClick={props.handleMenu}>
 						<a href="#contact">contact</a>
+					</li>
+					<li>
+						<a
+							href="/cv.pdf"
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							<button className="btn-resume">resume</button>
+						</a>
 					</li>
 				</ul>
 			</div>

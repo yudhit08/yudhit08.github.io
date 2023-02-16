@@ -84,25 +84,24 @@ function Contact() {
 						spellCheck="false"
 						autoComplete="off"
 						{...register("subject", {
-							required: "Subject is required!",
+							required: "Please enter your subject!",
 						})}
 					/>
                     <ErrorMessages errors={errors} input="subject" />
 				</div>
 				<div className="email">
-					<label htmlFor="email">Email</label>
+					<label htmlFor="email">Email Address</label>
 					<input
-						type="email"
 						name="email"
 						id="email"
 						autoComplete="off"
 						spellCheck="false"
 						{...register("email", {
-							required: "Email is required!",
+							required: "Please enter your email!",
 							pattern: {
 								value: /\S+@\S+\.\S+/,
 								message:
-									"Enter email in format:username@mail.com",
+									"Please enter your email in format: youremail@mail.com",
 							},
 						})}
 					/>
@@ -117,7 +116,7 @@ function Contact() {
 						rows="5"
 						spellCheck="false"
 						{...register("message", {
-							required: "Message is required!",
+							required: "Please enter your message!",
 						})}
 					></textarea>
                     <ErrorMessages errors={errors} input="message" />
