@@ -7,7 +7,7 @@ import Contact from "./section/Contact";
 import Social from "./components/Social";
 import Footer from "./section/Footer";
 import Loader from "./components/Loader";
-import "./Style.css";
+import "./style.min.css";
 
 function App() {
 	const [menu, setMenu] = useState(true);

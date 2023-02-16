@@ -1,8 +1,10 @@
+import logo from "../assets/logo.png"
+
 function Navbar(props) {
 	return (
 		<div className="navbar">
 			<a href="/" className="logo-container">
-				<img src="/logo.png" alt="logo" />
+				<img src={logo} alt="logo" />
 			</a>
 			<div className={props.menu ? "menu hidden" : "menu"}>
 				<ul>

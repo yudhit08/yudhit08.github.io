@@ -1,4 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
+import profile from "../assets/yudhit.jpg"
+import html from "../assets/html5.png"
+import css from "../assets/css3.png"
+import js from "../assets/js.png"
+import react from "../assets/react.png"
+import nodejs from "../assets/nodejs.png"
+import ps from "../assets/photoshop.png"
 
 function About() {
 	const [isShown, setIsShown] = useState(false);
@@ -49,27 +56,27 @@ function About() {
 					</p>
 				</div>
 				<div className="about--picture">
-					<img src="/yudhit.jpg" alt="profile" />
+					<img src={profile} alt="profile" />
 				</div>
 			</div>
 			<div className="skill-box--container">
 				<div className="skill-box html">
-					<img src="/html5.png" alt="" />
+					<img src={html} alt="html5" />
 				</div>
 				<div className="skill-box css">
-					<img src="/css3.png" alt="" />
+					<img src={css} alt="css3" />
 				</div>
 				<div className="skill-box js">
-					<img src="/js.png" alt="" />
+					<img src={js} alt="js" />
 				</div>
 				<div className="skill-box react">
-					<img src="/react.png" alt="" />
+					<img src={react} alt="react" />
 				</div>
 				<div className="skill-box nodejs">
-					<img src="/nodejs.png" alt="" />
+					<img src={nodejs} alt="nodejs" />
 				</div>
 				<div className="skill-box ps">
-					<img src="/photoshop.png" alt="" />
+					<img src={ps} alt="photoshop" />
 				</div>
 			</div>
 			<p className="tag bottom">&#60;/about&#62;</p>

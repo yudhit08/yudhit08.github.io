@@ -1,9 +1,9 @@
-import React from 'react'
+import logo from "../assets/logo.png"
 
 const Loader = () => {
   return (
     <div className='loader-container'>
-        <img src="./logo.png" alt="logo" />
+        <img src={logo} alt="logo" />
     </div>
   )
 }
