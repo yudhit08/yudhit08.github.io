@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d895123.css",
+    "main.css": "/static/css/main.85f457ed.css",
     "main.js": "/static/js/main.654c3547.js",
     "static/media/blueray.png": "/static/media/blueray.5d8b649e91834fe78c2b.png",
     "static/media/yudhit.jpg": "/static/media/yudhit.0aa76a1680a6a9136e16.jpg",
@@ -15,7 +15,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.9d895123.css",
+    "static/css/main.85f457ed.css",
     "static/js/main.654c3547.js"
   ]
 }
