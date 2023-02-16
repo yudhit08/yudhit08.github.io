@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyudhit_portfolio=self.webpackChunkyudhit_portfolio||[]).push([[577],{577:function(e,t,i){i.r(t);var n=i(449),o=i(417);t.default=function(){return(0,o.jsx)("div",{className:"loader-container",children:(0,o.jsx)(n.Z,{})})}}}]);
