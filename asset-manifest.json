@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.47f90fe0.css",
-    "main.js": "/static/js/main.689f219e.js",
+    "main.css": "/static/css/main.c3bd8204.css",
+    "main.js": "/static/js/main.16419cdb.js",
     "static/js/577.35781822.chunk.js": "/static/js/577.35781822.chunk.js",
     "static/media/blueray.png": "/static/media/blueray.3996d2af7c5940cb96d1.png",
     "static/media/yudhit.jpg": "/static/media/yudhit.0aa76a1680a6a9136e16.jpg",
@@ -15,7 +15,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.47f90fe0.css",
-    "static/js/main.689f219e.js"
+    "static/css/main.c3bd8204.css",
+    "static/js/main.16419cdb.js"
   ]
 }
