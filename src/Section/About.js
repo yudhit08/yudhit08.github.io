@@ -7,7 +7,7 @@ import react from "../assets/react.png"
 import nodejs from "../assets/nodejs.png"
 import ps from "../assets/photoshop.png"
 
-function About() {
+const About = () => {
 	const [isShown, setIsShown] = useState(false);
 	const ref = useRef(null);
 
@@ -42,15 +42,15 @@ function About() {
 			<div className="main-about">
 				<div className="about--desc">
 					<p>
-						Hi, my name is Yudhitya M. Renandra. I am a freelancer
+						Hi, my name is <span>Yudhitya M. Renandra</span>. I am a freelancer
 						web developer. I master front-end technology such as{" "}
 						<span>Javascript ES6+</span>, <span>React JS</span>,{" "}
-						<span>Material UI</span>, <span>Chakra UI</span> and{" "}
+                        <span>Chakra UI</span> and{" "}
 						<span>Node JS</span>.
 					</p>
 					<p>
-						I am currently studying for a bachelor's degree in
-						Informatics Engineering at the University of Riau. I
+						I am currently studying for a bachelor's degree in{" "}
+						<span>Informatics Engineering</span> at the University of Riau. I
 						live in Pekanbaru, Indonesia. I can create projects
 						remotely and I'm always interested in challenges.{" "}
 					</p>

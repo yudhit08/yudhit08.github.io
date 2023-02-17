@@ -9,13 +9,13 @@ function Navbar(props) {
 			<div className={props.menu ? "menu hidden" : "menu"}>
 				<ul>
 					<li onClick={props.handleMenu}>
-						<a href="#about">about</a>
+						<a href="/#about">about</a>
 					</li>
 					<li onClick={props.handleMenu}>
-						<a href="#project">projects</a>
+						<a href="/#project">projects</a>
 					</li>
 					<li onClick={props.handleMenu}>
-						<a href="#contact">contact</a>
+						<a href="/#contact">contact</a>
 					</li>
 					<li>
 						<a

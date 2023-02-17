@@ -1,13 +1,9 @@
 import { useEffect, useState, lazy, Suspense } from "react";
-import Navbar from "./components/Navbar";
-import Home from "./section/Home";
-import About from "./section/About";
-import Project from "./section/Project";
-import Contact from "./section/Contact";
-import Social from "./components/Social";
-import Footer from "./section/Footer";
-// import "./style.min.css";
-import "./css/style.css"
+import { Routes, Route } from "react-router-dom";
+import Section from "./Section";
+import "./style/style.min.css";
+// import "./style/style.css";
+import NotFound from "./pages/NotFound";
 const Loader = lazy(() => import("./components/Loader"));
 
 function App() {
@@ -29,15 +25,16 @@ function App() {
 					<Loader />
 				</Suspense>
 			) : (
-				<>
-					<Navbar menu={menu} handleMenu={handleMenu} />
-					<Home handleMenu={handleMenu} menu={menu} />
-					<About />
-					<Project />
-					<Contact />
-					<Social />
-					<Footer />
-				</>
+				<Routes>
+					<Route
+						exact
+						path="/"
+						element={
+							<Section menu={menu} handleMenu={handleMenu} />
+						}
+					/>
+                    <Route path="*" element={<NotFound menu={menu} handleMenu={handleMenu} />} />
+				</Routes>
 			)}
 		</div>
 	);
