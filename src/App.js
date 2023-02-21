@@ -4,7 +4,9 @@ import Section from "./Section";
 import "./style/style.min.css";
 // import "./style/style.css";
 import NotFound from "./pages/NotFound";
+import ReactGA from 'react-ga4';
 const Loader = lazy(() => import("./components/Loader"));
+const TRACKING_ID = "G-2P71E9R19E";
 
 function App() {
 	const [menu, setMenu] = useState(true);
@@ -15,6 +17,7 @@ function App() {
 	}
 
 	useEffect(() => {
+        ReactGA.initialize(TRACKING_ID);
 		setTimeout(() => setIsLoading(false), 2500);
 	}, []);
 
@@ -33,7 +36,12 @@ function App() {
 							<Section menu={menu} handleMenu={handleMenu} />
 						}
 					/>
-                    <Route path="*" element={<NotFound menu={menu} handleMenu={handleMenu} />} />
+					<Route
+						path="*"
+						element={
+							<NotFound menu={menu} handleMenu={handleMenu} />
+						}
+					/>
 				</Routes>
 			)}
 		</div>

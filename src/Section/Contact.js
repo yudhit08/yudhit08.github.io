@@ -74,21 +74,6 @@ function Contact() {
 			<p className="tag top">&#60;contact&#62;</p>
 			<h1 className="title">Contact</h1>
 			<form className="contact-form" onSubmit={handleSubmit(saveMessage)}>
-				<div className="subject">
-					<label htmlFor="subject">Subject</label>
-					<input
-						type="text"
-						name="subject"
-						id="subject"
-						autoCorrect="false"
-						spellCheck="false"
-						autoComplete="off"
-						{...register("subject", {
-							required: "Please enter your subject!",
-						})}
-					/>
-                    <ErrorMessages errors={errors} input="subject" />
-				</div>
 				<div className="email">
 					<label htmlFor="email">Email Address</label>
 					<input
@@ -106,6 +91,21 @@ function Contact() {
 						})}
 					/>
                     <ErrorMessages errors={errors} input="email" />
+				</div>
+				<div className="subject">
+					<label htmlFor="subject">Subject</label>
+					<input
+						type="text"
+						name="subject"
+						id="subject"
+						autoCorrect="false"
+						spellCheck="false"
+						autoComplete="off"
+						{...register("subject", {
+							required: "Please enter your subject!",
+						})}
+					/>
+                    <ErrorMessages errors={errors} input="subject" />
 				</div>
 				<div className="message">
 					<label htmlFor="message">Message</label>
