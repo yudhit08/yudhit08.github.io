@@ -1,5 +1,5 @@
 import { useEffect, useState, lazy, Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Section from "./Section";
 // import "./style/style.min.css";
 import "./style/style.css";
@@ -36,10 +36,16 @@ function App() {
 							<Section menu={menu} handleMenu={handleMenu} />
 						}
 					/>
+                    <Route
+						path="/404"
+						element={
+							<NotFound menu={menu} handleMenu={handleMenu} />
+						}
+					/>
 					<Route
 						path="*"
 						element={
-							<NotFound menu={menu} handleMenu={handleMenu} />
+							<Navigate replace to="/404" />
 						}
 					/>
 				</Routes>

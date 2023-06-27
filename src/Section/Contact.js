@@ -16,7 +16,7 @@ function Contact() {
 
 	const saveMessage = async (e) => {
 		e.preventDefault();
-		console.log(e.target);
+		// console.log(e.target);
 		try {
 			emailjs
 				.sendForm(
@@ -27,10 +27,10 @@ function Contact() {
 				)
 				.then(
 					(result) => {
-						console.log(result.text);
+						// console.log(result.text);
 					},
 					(error) => {
-						console.log(error.text);
+						// console.log(error.text);
 					}
 				);
 			Swal.fire({

@@ -20,7 +20,6 @@ export const useElementVisible = (ref) => {
 			window.removeEventListener("scroll", () => handleVisibleChange);
 		};
 	}, [ref]);
-    console.log(isShown)
 
 	return isShown;
 };
