@@ -1,37 +1,18 @@
-import { useState, useEffect, useRef } from "react";
-import profile from "../assets/yudhit.jpg"
-import html from "../assets/html5.png"
-import css from "../assets/css3.png"
-import js from "../assets/js.png"
-import react from "../assets/react.png"
-import nodejs from "../assets/nodejs.png"
-import ps from "../assets/photoshop.png"
+import { useRef } from "react";
+import profile from "../assets/yudhit.jpg";
+import html from "../assets/html5.png";
+import css from "../assets/css3.png";
+import js from "../assets/js.png";
+import react from "../assets/react.png";
+import nodejs from "../assets/nodejs.png";
+import ps from "../assets/photoshop.png";
+import { useElementVisible } from "../hooks/useElementVisible";
 
 const About = () => {
-	const [isShown, setIsShown] = useState(false);
 	const ref = useRef(null);
+	const isShown = useElementVisible(ref)
 
-	const handleScroll = () => {
-		if (!ref.current) return;
-		let windowHeight = window.innerHeight;
-		let elementTop = ref.current.getBoundingClientRect().y;
-		let elementVisible = 50;
-		if (elementTop < windowHeight - elementVisible) {
-			setIsShown(true);
-		} else {
-			setIsShown(false);
-		}
-	};
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-
-		return () => {
-			window.removeEventListener("scroll", () => handleScroll);
-		};
-	}, []);
-
-	return (
+    return (
 		<div
 			className={isShown ? "about-container active" : "about-container"}
 			id="about"
@@ -42,17 +23,21 @@ const About = () => {
 			<div className="main-about">
 				<div className="about--desc">
 					<p>
-						Hi, my name is <span>Yudhitya M. Renandra</span>. I am a freelancer
-						web developer. I master front-end technology such as{" "}
-						<span>Javascript ES6+</span>, <span>React JS</span>,{" "}
-                        <span>Chakra UI</span> and{" "}
-						<span>Node JS</span>.
+						Hello! my name is <span>Yudhitya M. Renandra</span>. I
+						am a freelancer web developer with expertise in{" "}
+						<span>React JS</span>, <span>Node JS</span>, and{" "}
+						<span>Javascript ES6+</span>, I am able to create{" "}
+						<span>dynamic</span> and <span>interactive</span> web
+						applications that can be customized to meet the unique
+						needs of each client.
 					</p>
 					<p>
-						I am currently studying for a bachelor's degree in{" "}
-						<span>Informatics Engineering</span> at the University of Riau. I
-						live in Pekanbaru, Indonesia. I can create projects
-						remotely and I'm always interested in challenges.{" "}
+						With a deep understanding of React JS, I create highly{" "}
+						<span>responsive</span>, <span>adaptive</span>, and{" "}
+						<span>complex</span> applications that can handle
+						various screen sizes. I also specialize in Node JS,
+						creating server-side applications that can handle large
+						amounts of traffic and data.
 					</p>
 				</div>
 				<div className="about--picture">
@@ -82,6 +67,6 @@ const About = () => {
 			<p className="tag bottom">&#60;/about&#62;</p>
 		</div>
 	);
-}
+};
 
 export default About;

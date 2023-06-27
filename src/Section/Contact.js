@@ -1,29 +1,18 @@
-import { useState, useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import ErrorMessages from "../components/ErrorMessages";
+import { useElementVisible } from "../hooks/useElementVisible";
 
 function Contact() {
-	const [isShown, setIsShown] = useState(false);
-	const ref = useRef(null);
+    const ref = useRef(null);
+    const isShown = useElementVisible(ref)
 	const {
 		register,
 		handleSubmit,
 		formState: { errors },
 	} = useForm({ criteriaMode: "all" });
-
-	const handleScroll = () => {
-		if (!ref.current) return;
-		let windowHeight = window.innerHeight;
-		let elementTop = ref.current.getBoundingClientRect().y;
-		let elementVisible = 50;
-		if (elementTop < windowHeight - elementVisible) {
-			setIsShown(true);
-		} else {
-			setIsShown(false);
-		}
-	};
 
 	const saveMessage = async (e) => {
 		e.preventDefault();
@@ -54,14 +43,6 @@ function Contact() {
 			console.log(error);
 		}
 	};
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-
-		return () => {
-			window.removeEventListener("scroll", () => handleScroll);
-		};
-	}, []);
 
 	return (
 		<div

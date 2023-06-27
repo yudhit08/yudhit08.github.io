@@ -1,6 +1,6 @@
 import blueray from "../assets/blueray.png"
 import quizManiac from "../assets/quiz-maniac.png"
-import calculator from "../assets/calculator.png"
+import webTiUnri from "../assets/web-ti-unri.png"
 import qrCodeGen from "../assets/qrcode-generator.png"
 
 export const listProject = [
@@ -15,9 +15,9 @@ export const listProject = [
         img: quizManiac
     },
     {
-        name: "calculator",
-        link: "https://react-calculator-beryl-delta.vercel.app/",
-        img: calculator
+        name: "web-ti-unri",
+        link: "https://informatikaunri.site/",
+        img: webTiUnri
     },
     {
         name: "qrcode-generator",

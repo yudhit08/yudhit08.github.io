@@ -1,29 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useRef } from "react";
+import { useElementVisible } from "../hooks/useElementVisible";
 import { listProject } from "../lib/listProject";
 
 function Project() {
-	const [isShown, setIsShown] = useState(false);
 	const ref = useRef(null);
-
-	const handleScroll = () => {
-		if (!ref.current) return;
-		let windowHeight = window.innerHeight;
-		let elementTop = ref.current.getBoundingClientRect().y;
-		let elementVisible = 50;
-		if (elementTop < windowHeight - elementVisible) {
-			setIsShown(true);
-		} else {
-			setIsShown(false);
-		}
-	};
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-
-		return () => {
-			window.removeEventListener("scroll", () => handleScroll);
-		};
-	}, []);
+    const isShown = useElementVisible(ref)
 
 	return (
 		<div

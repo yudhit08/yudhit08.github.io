@@ -1,8 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
-function Home(props) {
-	const ref = useRef(null);
-
+function Home() {
 	useEffect(() => {
 		const canvas = document.getElementById("animation-mouse");
 		const ctx = canvas.getContext("2d");
@@ -103,7 +101,7 @@ function Home(props) {
 	return (
 		<>
 			<canvas id="animation-mouse"></canvas>
-			<div className="home-container" id="home" ref={ref}>
+			<div className="home-container" id="home">
 				<p className="tag top">&#60;intro&#62;</p>
 				<div className="intro">
 					<p>hi, my name is</p>
