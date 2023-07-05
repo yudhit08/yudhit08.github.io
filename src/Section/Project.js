@@ -26,7 +26,7 @@ function Project() {
 									target="_blank"
 									rel="noreferrer"
 								>
-									View Source
+									View Website
 								</a>
 							</div>
 							<img src={project.img} alt={project.name} />

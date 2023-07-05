@@ -2,7 +2,7 @@
   "name": "yudhit_portfolio",
   "version": "3.0.0",
   "private": true,
-  "homepage": "https://yudhityamr.me",
+  "license": "MIT",
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "@hookform/error-message": "^2.0.1",
