@@ -41,7 +41,7 @@ const About = () => {
 					</p>
 				</div>
 				<div className="about--picture">
-					<img src={profile} alt="profile" />
+					<img src={profile} alt="profile"/>
 				</div>
 			</div>
 			<div className="skill-box--container">
