@@ -15,22 +15,22 @@ function Contact() {
 	} = useForm({ criteriaMode: "all" });
 
 	const saveMessage = async (e) => {
-		e.preventDefault();
-		// console.log(e.target);
+		// e.preventDefault();
+		// console.log(e);
 		try {
 			emailjs
-				.sendForm(
+				.send(
 					"service_h117od3",
 					"template_y22u1bd",
-					e.target,
+					e,
 					"EJ-uRBzOKaoqnK-Ve"
 				)
 				.then(
 					(result) => {
-						// console.log(result.text);
+						console.log("success");
 					},
 					(error) => {
-						// console.log(error.text);
+						console.log("error");
 					}
 				);
 			Swal.fire({
@@ -41,6 +41,12 @@ function Contact() {
 			});
 		} catch (error) {
 			console.log(error);
+            Swal.fire({
+				title: "Failed",
+				text: "Your message failed to be sent. Please try again.",
+				icon: "error",
+				confirmButtonText: "Ok",
+			});
 		}
 	};
 
