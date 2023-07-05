@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.6993a1d2.css",
-    "main.js": "/static/js/main.bfb51f3e.js",
+    "main.js": "/static/js/main.fccd24c0.js",
     "static/js/577.35781822.chunk.js": "/static/js/577.35781822.chunk.js",
     "static/media/blueray.png": "/static/media/blueray.3996d2af7c5940cb96d1.png",
-    "static/media/web-ti-unri.png": "/static/media/web-ti-unri.6dd3a2ec23a9cf73c99c.png",
+    "static/media/web-ti-unri.png": "/static/media/web-ti-unri.c080b57be676f17c78f2.png",
+    "static/media/codetechsia.png": "/static/media/codetechsia.0f399a9cadeab6860095.png",
     "static/media/yudhit.jpg": "/static/media/yudhit.8c96f845342c2ed65103.jpg",
     "static/media/quiz-maniac.png": "/static/media/quiz-maniac.3cf4fe03d71360e535c6.png",
     "static/media/html5.png": "/static/media/html5.588dddc1e1a778b5d4e1.png",
-    "static/media/qrcode-generator.png": "/static/media/qrcode-generator.99d9378d0ea32d8b5afb.png",
     "static/media/react.png": "/static/media/react.f3e576ba08e6be927148.png",
     "static/media/nodejs.png": "/static/media/nodejs.71da8e5dd61c2ff164f8.png",
     "static/media/css3.png": "/static/media/css3.463e319bad8e0edf1ef7.png",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.6993a1d2.css",
-    "static/js/main.bfb51f3e.js"
+    "static/js/main.fccd24c0.js"
   ]
 }
