@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.d111f0cd.css",
-    "main.js": "/static/js/main.cba1d568.js",
-    "static/js/577.35781822.chunk.js": "/static/js/577.35781822.chunk.js",
+    "main.css": "/static/css/main.8a22d69a.css",
+    "main.js": "/static/js/main.00a1b587.js",
+    "static/js/577.b4185718.chunk.js": "/static/js/577.b4185718.chunk.js",
     "static/media/blueray.png": "/static/media/blueray.3996d2af7c5940cb96d1.png",
     "static/media/web-ti-unri.png": "/static/media/web-ti-unri.c080b57be676f17c78f2.png",
     "static/media/codetechsia.png": "/static/media/codetechsia.0f399a9cadeab6860095.png",
@@ -15,7 +15,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.d111f0cd.css",
-    "static/js/main.cba1d568.js"
+    "static/css/main.8a22d69a.css",
+    "static/js/main.00a1b587.js"
   ]
 }

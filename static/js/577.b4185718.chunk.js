@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyudhit_portfolio=self.webpackChunkyudhit_portfolio||[]).push([[577],{577:(e,s,o)=>{o.r(s),o.d(s,{default:()=>i});var t=o(449),a=o(417);const i=()=>(0,a.jsx)("div",{className:"loader-container",children:(0,a.jsx)(t.Z,{})})}}]);
