@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar";
 
-const NotFound = ({menu, handleMenu}) => {
+const NotFound = ({menu, scrollToSection}) => {
 	return (
 		<div>
-			<Navbar menu={menu} handleMenu={handleMenu}  />
+			<Navbar menu={menu} scrollToSection={scrollToSection}  />
 			<div className="notfound-page">
 				<div className="container">
 					<h1>404</h1>

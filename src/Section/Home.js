@@ -1,6 +1,7 @@
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
-function Home() {
+function Home({ homeRef }) {
 	useEffect(() => {
 		const canvas = document.getElementById("animation-mouse");
 		const ctx = canvas.getContext("2d");
@@ -32,7 +33,7 @@ function Home() {
 		};
 
 		canvas.addEventListener("mousemove", onMove);
-        canvas.addEventListener('click', onMove)
+		canvas.addEventListener("click", onMove);
 
 		class Particle {
 			constructor() {
@@ -101,17 +102,60 @@ function Home() {
 	return (
 		<>
 			<canvas id="animation-mouse"></canvas>
-			<div className="home-container" id="home">
-				<p className="tag top">&#60;intro&#62;</p>
+			<div className="home-container" id="home" ref={homeRef}>
+				<motion.div
+					initial={{ y: 10, opacity: 0 }}
+					animate={{ y: 0, opacity: 100 }}
+					transition={{ delay: 0.6 }}
+				>
+					<p className="tag top font-mono">&#60;intro&#62;</p>
+				</motion.div>
 				<div className="intro">
-					<p>hi, my name is</p>
-					<h1>Yudhitya M. Renandra</h1>
-					<h1 className="desc">I am a web developer</h1>
+					<p>
+						<motion.div
+							initial={{ y: 10, opacity: 0 }}
+							animate={{ y: 0, opacity: 100 }}
+							transition={{ delay: 0.7 }}
+						>
+							hi, my name is
+						</motion.div>
+					</p>
+					<h1 className="font-bold">
+						<motion.div
+							initial={{ y: 10, opacity: 0 }}
+							animate={{ y: 0, opacity: 100 }}
+							transition={{ delay: 0.8 }}
+						>
+							Yudhitya M. Renandra
+						</motion.div>
+					</h1>
+					<h1 className="desc font-semibold">
+						<motion.div
+							initial={{ y: 10, opacity: 0 }}
+							animate={{ y: 0, opacity: 100 }}
+							transition={{ delay: 0.9 }}
+						>
+							I am a web developer
+						</motion.div>
+					</h1>
 				</div>
 				<a href="#contact">
-					<button className="contact-me">Say hello!</button>
+					<motion.button
+						className="contact-me"
+						initial={{ y: 10, opacity: 0 }}
+						animate={{ y: 0, opacity: 100 }}
+						transition={{ delay: 1 }}
+					>
+						Say hello!
+					</motion.button>
 				</a>
-				<p className="tag bottom">&#60;/intro&#62;</p>
+				<motion.div
+					initial={{ y: 10, opacity: 0 }}
+					animate={{ y: 0, opacity: 100 }}
+					transition={{ delay: 1.1 }}
+				>
+					<p className="tag bottom font-mono">&#60;/intro&#62;</p>
+				</motion.div>
 			</div>
 		</>
 	);

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Social = () => {
@@ -10,7 +11,13 @@ const Social = () => {
 				target="_blank"
 				rel="noreferrer"
 			>
-				<FaGithub />
+				<motion.div
+					initial={{ y: 10, opacity: 0 }}
+					animate={{ y: 0, opacity: 100 }}
+					transition={{ delay: 1.4 }}
+				>
+					<FaGithub />
+				</motion.div>
 			</a>
 			<a
 				className="social-icons"
@@ -18,7 +25,13 @@ const Social = () => {
 				target="_blank"
 				rel="noreferrer"
 			>
-				<FaInstagram />
+				<motion.div
+					initial={{ y: 10, opacity: 0 }}
+					animate={{ y: 0, opacity: 100 }}
+					transition={{ delay: 1.5 }}
+				>
+					<FaInstagram />
+				</motion.div>
 			</a>
 			<a
 				className="social-icons"
@@ -26,7 +39,13 @@ const Social = () => {
 				target="_blank"
 				rel="noreferrer"
 			>
-				<FaLinkedin />
+				<motion.div
+					initial={{ y: 10, opacity: 0 }}
+					animate={{ y: 0, opacity: 100 }}
+					transition={{ delay: 1.6 }}
+				>
+					<FaLinkedin />
+				</motion.div>
 			</a>
 		</div>
 	);
